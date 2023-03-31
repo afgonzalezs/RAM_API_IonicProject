@@ -1,0 +1,16 @@
+<ion-content *ngIf="allEpisodes">
+  <ion-list>
+  <ion-list-header>
+  Listado de episodios
+  </ion-list-header>
+  
+  <ion-item *ngFor = "let episode of allEpisodes.results " >
+  <ion-label>
+  <h2>{{ episode.name }}</h2>
+  <h3>Publicado: {{ episode.air_date }}</h3>
+  <p>Código: {{ episode.episode}}</p>
+  </ion-label>
+  </ion-item>
+  </ion-list>
+  </ion-content>
+  
